@@ -1,5 +1,5 @@
 {% set name = "pyDGSA" %}
-{% set version = "1.0.6" %}
+{% set version = "1.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydgsa-{{ version }}.tar.gz
-  sha256: 0307f50bc595833832a8de2c1ed038dc95c042bfed6bd849495f85e1a3bfc29b
+  sha256: b6393f1bd38014d07b12f88ff6aab28f897d234acea6e02df3fc3bfbdd0ac9d1
 
 build:
   noarch: python
@@ -27,6 +27,8 @@ requirements:
     - tqdm >=4.66.4,<5.0.0
     - scikit-learn >=1.5.1,<2.0.0
     - scipy >=1.14.0,<2.0.0
+    - ipywidgets >=8.1.3,<9.0.0
+    - pytest >=8.3.4,<9.0.0
 
 test:
   imports:

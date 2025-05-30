@@ -1,6 +1,6 @@
-{% set python_min = '3.10.0' %}
+{% set python_min = "3.10.0" %}
 {% set name = "pyDGSA" %}
-{% set version = "1.0.7" %}
+{% set version = "1.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pydgsa-{{ version }}.tar.gz
-  sha256: b6393f1bd38014d07b12f88ff6aab28f897d234acea6e02df3fc3bfbdd0ac9d1
+  sha256: b114bcba5ccf0eebad25ac0b4c8965d91e4f975551e2cf9448a35a7bc1901e71
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:

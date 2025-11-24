@@ -23,6 +23,7 @@ requirements:
   run:
     - python >={{ python_min }},<4.0.0
     - numpy >=2.0.0,<3.0.0
+    - notebook >=7.5.0,<8.0.0
     - matplotlib-base >=3.7.0,<4.0.0
     - pandas >=2.2.2,<3.0.0
     - tqdm >=4.66.4,<5.0.0
